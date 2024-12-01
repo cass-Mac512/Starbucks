@@ -41,6 +41,19 @@ body{
     max-width: 100%;
   }
 
+  #tarjeta-cuatro{
+    background-color: #1E3932;
+  }
+  
+  #tarjeta-cuatro .contenedor-imagen{
+    width: 50%;
+    vertical-align: middle;
+  }
+  
+  #tarjeta-cuatro .contenedor-imagen .imagen-starbucks{
+    max-width: 100%;
+  }
+
 
   .contenedor-texto{
     color: white;
