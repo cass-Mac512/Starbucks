@@ -1,7 +1,5 @@
 body{
     font-family: SoDo Sans, Helvetica, Arial, sans-serif;
-
-    body {
     background-color: #fff;
     color: rgba(0, 0, 0, .87);
     font-family: SoDo Sans, Helvetica, Arial, sans-serif;
@@ -13,8 +11,19 @@ body{
     letter-spacing: -.01em;
     min-width: 350px;
     margin: 0;
-}
+
   }
+
+  ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  a{
+    text-decoration: none;
+  }
+
   #tarjeta-uno{
     background-color: #1E3932;
   }
@@ -154,8 +163,8 @@ div {
 }
 
 header{
-  padding-bottom: 10px;
-  padding-top: 10px;
+  padding-bottom: 20px;
+  padding-top: 20px;
   background-color: #fff;
   box-shadow: 0 3px 3px rgba(0, 0, 0, .1);
   left: 0;
@@ -189,9 +198,6 @@ header{
   align-items: center;
 }
 
-.main-menu ul{
-  list-style: none;
-}
 .main-menu ul li{
 display: inline-block;
 margin-right: 40px;
@@ -270,6 +276,8 @@ margin-right: 40px;
   padding-left: 20px;
   padding-right: 20px;
   max-width: 1240px;
+  margin-left: auto;
+  margin-right: auto;
 }
 .region-prefooter .wrapper-menu {
   position: relative;
@@ -278,15 +286,40 @@ margin-right: 40px;
   margin-bottom: 40px;
 }
 
-
-@media (min-width: 1024px) {
-  .region-prefooter .wrapper-menu .block--menu {
-      margin-bottom: 0;
-      margin-right: 40px;
-      max-width: 190px;
-  }
+.region-prefooter h3 {
+  font-size: 1rem;
+  margin-bottom: 24px;
+  position: relative;
+}
+.text-regular {
+  font-weight: 400;
 }
 
+.region-prefooter .block--menu ul a {
+  color: #777;
+  font-weight: 400;
+  font-size: 1rem;
+}
+
+.region-prefooter .block--menu ul a:hover {
+  color: #000;
+}
+
+.region-prefooter .block--menu ul li:first-child {
+  padding-top: 0;
+}
+
+.region-prefooter .block--menu ul li {
+  margin-bottom: 8px;
+  padding-bottom: 8px;
+  padding-top: 8px;
+}
+
+@media (min-width: 768px) and (max-width: 1200px) {
+  .region-prefooter h3 {
+      font-size: calc(1.0188rem + .2256vw);
+  }
+}
 
 @media (min-width: 1024px) {
   .l-region--prefooter {
@@ -296,6 +329,12 @@ margin-right: 40px;
   }
   .region-prefooter .wrapper-menu {
     display: flex;
+}
+
+.region-prefooter .wrapper-menu .block--menu {
+  margin-bottom: 0;
+  margin-right: 40px;
+  max-width: 190px;
 }
 }
 
@@ -327,6 +366,10 @@ margin-right: 40px;
   .size-50 .block-image {
     grid-column: 1;
   }
+
+  .region-prefooter h3 {
+    font-size: 1.188rem;
+}
 }
 
 
