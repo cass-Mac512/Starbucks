@@ -1,5 +1,19 @@
 body{
     font-family: SoDo Sans, Helvetica, Arial, sans-serif;
+
+    body {
+    background-color: #fff;
+    color: rgba(0, 0, 0, .87);
+    font-family: SoDo Sans, Helvetica, Arial, sans-serif;
+    font-weight: 400;
+    -webkit-font-smoothing: antialiased;
+    font-feature-settings: "calt";
+    font-size: 1rem;
+    line-height: 1.5;
+    letter-spacing: -.01em;
+    min-width: 350px;
+    margin: 0;
+}
   }
   #tarjeta-uno{
     background-color: #1E3932;
@@ -38,11 +52,24 @@ body{
     max-width: 100%;
   }
 
+  #tarjeta-cinco{
+    background-color: #d50032;
+  }  
+  
+  #tarjeta-cinco .contenedor-imagen .imagen-starbucks{
+    max-width: 100%;
+  }
+
+  #tarjeta-seis .contenedor-imagen .imagen-starbucks{
+    max-width: 100%;
+  }
 
   #tarjeta-uno .contenedor-imagen,
   #tarjeta-dos .contenedor-imagen,  
   #tarjeta-tres .contenedor-imagen,
-  #tarjeta-cuatro .contenedor-imagen{  
+  #tarjeta-cuatro .contenedor-imagen,
+  #tarjeta-cinco .contenedor-imagen,
+  #tarjeta-seis .contenedor-imagen{  
     vertical-align: middle;
   }
 
@@ -56,13 +83,7 @@ body{
     padding: 32px 16px;
   }
 
-  @media (min-width: 768px) {
-    .contenedor-texto{
-        margin: 0 auto;
-        max-width: 83%;
-    }
-}
-  
+ 
   .contenedor-interno{
     display: inline-block;  
        
@@ -84,4 +105,155 @@ body{
   font-size: 1.875rem;
   line-height: 1.385;
   font-weight: 600;
+}
+
+.button {  
+  display: inline-block;
+  background: none;
+  border: 1px solid;
+  border-radius: 50px;
+  padding: 7px 16px;
+  font-weight: 600;
+  line-height: 1;
+  text-align: center;
+  text-decoration: none;
+  transition: all .2s ease;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  margin-right: -15px;
+  margin-left: -15px;
+}
+
+.row {
+  display: block;
+  margin-left: 0;
+  margin-right: 0;
+}
+
+*, :after, :before {
+  box-sizing: border-box;
+}
+
+div {
+  display: block;
+  unicode-bidi: isolate;
+}
+
+.block--banner-wrapper {  
+  grid-gap: 20px;
+  gap: 20px;
+  margin-bottom: 20px;  
+}
+
+.block-2-column .block-content {
+  align-items: center;
+  display: grid;
+}
+
+header{
+  padding-bottom: 20px;
+  padding-top: 20px;
+  background-color: #fff;
+  box-shadow: 0 3px 3px rgba(0, 0, 0, .1);
+  left: 0;
+  position: relative;
+  top: 0;
+  width: 100%;
+  z-index: 2;
+}
+
+.header-container {   
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 1240px;
+}
+
+.header-container .main-container {   
+  display: grid;  
+  grid-template-columns: 60px 1fr;
+  grid-gap: 40px;
+  gap: 40px;  
+  justify-content: space-between;
+}
+
+/* Logo */
+.logo img {
+  height: 50px;
+}
+.main-menu ul{
+  list-style: none;
+}
+.main-menu ul li{
+display: inline-block;
+margin-right: 40px;
+}
+
+.main-menu ul li a{
+  font-size: .875rem;
+    letter-spacing: .1em;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-decoration:none;
+    color: inherit;
+}
+
+.main-menu .menu-left ul li a:hover{
+  color: #00754a;
+    position: relative;
+}
+
+.main-menu .menu-left ul li a:hover::before{
+  bottom: -37px;
+        background: #00754a;
+        content: "";
+        height: 5px;
+        display: block;
+        position: absolute;
+        width: 100%;
+}
+
+
+@media (min-width: 768px) {
+  .block--banner-wrapper {
+      grid-gap: 30px;
+      gap: 30px;
+      margin-bottom: 30px;
+  }
+
+  .contenedor-texto{
+      margin: 0 auto;
+      max-width: 83%;
+  }
+
+  .size-50 .block-2-column .block-content {
+    grid-template-columns: 1fr;
+  }
+
+
+  .block-2-column .block-content {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .size-50 .block-image {
+    grid-column: 1;
+  }
+}
+
+
+.bg-cherry-blossom{
+  background-color: #f6bfd9;
+  color: #d50032;
+}
+
+.bg-sky-blue{
+  background-color: #98cde4;
+  color: #003b49;
+}
+
+.main-menu{
+  display: flex;
+  justify-content: space-between;
 }
